@@ -24,4 +24,4 @@ steps:
     azureSubscription: 'Visual Studio Professional(3b129946-e727-4bf4-8764-dd3e51731b6d)'
     appType: 'webApp'
     WebAppName: 'sg204-web-app'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/*.zip'
