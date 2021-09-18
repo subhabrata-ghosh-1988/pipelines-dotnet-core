@@ -1,4 +1,11 @@
 # ASP.NET Core
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Visual Studio Professional(3b129946-e727-4bf4-8764-dd3e51731b6d)'
+    appType: 'webApp'
+    WebAppName: 'sg204-web-app'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
